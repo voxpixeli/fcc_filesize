@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>File Metadata Microservice</title>
+      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.2.2/jquery.form.min.js"></script>
+      <script type="text/javascript" src="api/filesize.js"></script>
+   </head>
+
+   <body>
+      <div class="container">
+        <h1>File Metadata Microservice</h1>
+        <div id="panel">
+          <form id="fileForm" enctype="multipart/form-data" action="/upload" method="post">
+            <input type="file" name="userFile"><br/><br/>
+            <input type="submit" name="submit" value="Get size">&nbsp;<span id="result"></span>
+          </form>
+        </div>
+      </div>
+   </body>
+
+</html>
